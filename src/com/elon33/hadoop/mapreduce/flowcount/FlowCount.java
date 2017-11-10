@@ -101,8 +101,8 @@ public class FlowCount {
 		job.setInputFormatClass(TextInputFormat.class);
 		job.setOutputFormatClass(TextOutputFormat.class);
 		
-		FileInputFormat.setInputPaths(job, new Path("c:/wc1/srcdata/HTTP_20130313143750.dat"));
-		FileOutputFormat.setOutputPath(job, new Path("c:/wc1/output"));
+		FileInputFormat.setInputPaths(job, new Path("./wc/srcdata/input2"));
+		FileOutputFormat.setOutputPath(job, new Path("./wc/outdata/output4"));
 		
 		job.waitForCompletion(true);
 		

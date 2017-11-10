@@ -8,7 +8,6 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-//com.elon.bigdata.hadoop.mr.wordcount.WordCountRunner
 public class WordCountRunner {
 
 	public static void main(String[] args) throws Exception {
