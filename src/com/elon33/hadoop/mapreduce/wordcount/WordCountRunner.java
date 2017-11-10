@@ -35,10 +35,10 @@ public class WordCountRunner {
 		wcjob.setOutputValueClass(LongWritable.class);
 
 		// 指定要处理的原始数据所存放的路径
-		FileInputFormat.setInputPaths(wcjob, "c:/wc/srcdata");
+		FileInputFormat.setInputPaths(wcjob, "./wc/srcdata/input1");
 
 		// 指定处理之后的结果输出到哪个路径
-		FileOutputFormat.setOutputPath(wcjob, new Path("c:/wc/output"));
+		FileOutputFormat.setOutputPath(wcjob, new Path("./wc/outdata/output1"));
 
 		// Submit the job to the cluster and wait for it to finish.
 		boolean res = wcjob.waitForCompletion(true);

@@ -74,8 +74,8 @@ public class FlowCountSort {
 		job.setInputFormatClass(TextInputFormat.class);
 		job.setOutputFormatClass(TextOutputFormat.class);
 
-		FileInputFormat.setInputPaths(job, new Path("f:/wc/srcdata/part-r-00000"));
-		FileOutputFormat.setOutputPath(job, new Path("f:/wc/output"));
+		FileInputFormat.setInputPaths(job, new Path("./wc/srcdata/input2"));
+		FileOutputFormat.setOutputPath(job, new Path("./wc/outdata/output2"));
 
 		job.waitForCompletion(true);
 
