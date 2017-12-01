@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/elon33/hadoop/mapreduce/flowcount/FlowBean.java=GBK
+encoding//src/com/elon33/hadoop/mapreduce/flowcount/FlowCount.java=GBK
+encoding//src/com/elon33/hadoop/mapreduce/inverseIndex/InverseIndexStepOne.java=GBK
+encoding//src/com/elon33/hadoop/mapreduce/inverseIndex/InverseIndexStepTwo.java=GBK
+encoding//src/com/elon33/hadoop/mapreduce/joinquery/JoinQuery.java=GBK
+encoding//src/com/elon33/hadoop/mapreduce/partition/FlowCountPartition.java=GBK
+encoding//src/com/elon33/hadoop/mapreduce/wordcount/WordCountMapper.java=UTF-8
+encoding//src/com/elon33/hadoop/mapreduce/wordcount/WordCountReducer.java=UTF-8

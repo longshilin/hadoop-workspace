@@ -16,6 +16,7 @@ import org.apache.hadoop.util.Progressable;
 
 /**
  * 将本地文件复制到Hadoop文件系统
+ * 
  * @author elon
  *
  */
@@ -25,17 +26,16 @@ public class FileCopyWithProgress {
 		String localSrc = args[0];
 		String dst = args[1];
 		InputStream in = new BufferedInputStream(new FileInputStream(localSrc));
-		
+
 		Configuration conf = new Configuration();
 		FileSystem fs = FileSystem.get(URI.create(dst), conf);
 		OutputStream out = fs.create(new Path(dst), new Progressable() {
-			
 			@Override
 			public void progress() {
 				System.out.print(".");
 			}
 		});
-		
-		IOUtils.copyBytes(in, out, 4096, true);
+		System.out.println();
+		// IOUtils.copyBytes(in, out, 4096, true);
 	}
 }

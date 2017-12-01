@@ -29,6 +29,7 @@ public class FileSystemCat {
 			System.out.println("");
 			System.out.println("********************");
 			IOUtils.copyBytes(in, System.out, 4096, false);
+			
 		} finally {
 			IOUtils.closeStream(in);
 		}
